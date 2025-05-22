@@ -1,88 +1,138 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marketing Com Bruno Marin</title>
+  <title>Agência Thrive</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Marketing Com Bruno Marin</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home">
-      <h2>Bem-vindo!</h2>
-      <p>Texto de boas-vindas aqui.</p>
-    </section>
+<!-- Banner com Slogan -->
+<div style="
+  background: linear-gradient(90deg, #00bcd4, #ff6f61);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+">
+  Transformando ideias em resultados.
+</div>
 
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-        <img src="bruno.jpg" alt="Foto de Bruno Marin" style="max-width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-        <div style="flex: 1;">
-          <p>Olá! Meu nome é <strong>Bruno Marin</strong>, tenho 30 anos e estou em transição de carreira para a área de marketing, onde encontrei minha verdadeira paixão: <strong>a comunicação estratégica, a construção de marca e o universo digital</strong>.</p>
+<header>
+  <h1>Agência Thrive</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
-          <p>Sou estudante de Marketing pela <strong>Faculdade Anhembi Morumbi</strong> e trago na bagagem experiências práticas com <strong>atendimento ao público, vendas, organização de processos</strong> e foco em resultados — habilidades que hoje aplico com propósito na comunicação e no marketing.</p>
+<main>
+  <section id="home">
+    <h2>Bem-vindo à Agência Thrive</h2>
+    <p>Na <strong>Agência Thrive</strong>, acreditamos no poder das boas ideias e na força das estratégias bem executadas. Nosso propósito é ajudar marcas e pessoas a se destacarem no mercado, com comunicação criativa e resultados concretos.</p>
+    <p>Transformamos ideias em resultados. Se você quer construir uma presença marcante, comunicar-se com clareza e crescer com consistência, está no lugar certo. Vamos juntos?</p>
+  </section>
 
-          <p>Meu perfil combina <strong>criatividade, disciplina e vontade de aprender rápido</strong>. Tenho facilidade em lidar com clientes, construir relacionamentos e pensar de forma estratégica. Acredito que uma boa imagem comunica muito antes da primeira palavra, e é isso que me move a ajudar pessoas e marcas a se posicionarem melhor no mercado.</p>
-
-          <p>Hoje, atuo como assessor de comunicação, oferecendo suporte para desenvolvimento de <strong>projetos, imagem pessoal e estratégias digitais</strong>. Estou pronto para construir parcerias e histórias de impacto.</p>
-        </div>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+      <img src="bruno.jpg" alt="Foto de Bruno Marin" style="max-width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+      <div style="flex: 1;">
+        <p>Olá! Meu nome é <strong>Bruno Marin</strong>, tenho 30 anos e estou em transição de carreira para a área de marketing, onde encontrei minha verdadeira paixão: <strong>a comunicação estratégica, a construção de marca e o universo digital</strong>.</p>
+        <p>Sou estudante de Marketing pela <strong>Faculdade Anhembi Morumbi</strong> e trago na bagagem experiências práticas com <strong>atendimento ao público, vendas, organização de processos</strong> e foco em resultados — habilidades que hoje aplico com propósito na comunicação e no marketing.</p>
+        <p>Hoje, atuo como assessor de comunicação na <strong>Agência Thrive</strong>, oferecendo suporte para desenvolvimento de <strong>projetos, imagem pessoal e estratégias digitais</strong>. Estou pronto para construir parcerias e histórias de impacto.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="portfolio">
-      <h2>Portfólio</h2>
-      <p>Exemplos dos seus projetos ou trabalhos anteriores.</p>
-    </section>
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <p>Exemplos dos meus projetos e trabalhos anteriores. Em breve, mais novidades aqui!</p>
+  </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Você pode entrar em contato comigo diretamente preenchendo o formulário abaixo, ou se preferir, envie um e-mail para:</p>
+    <p><strong><a href="mailto:contatobmadm@outlook.com" style="color: #0077cc;">contatobmadm@outlook.com</a></strong></p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+    <form action="mailto:contatobmadm@outlook.com" method="POST" enctype="text/plain">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
 
-  <footer>
-    <p>&copy; 2025 Bruno Marin. Todos os direitos reservados.</p>
-  </footer>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+</main>
 
-  <script>
-    const sections = document.querySelectorAll("section");
+<footer>
+  <p style="font-style: italic;">Transformando ideias em resultados.</p>
+  <p>&copy; 2025 Agência Thrive. Todos os direitos reservados.</p>
+</footer>
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, {
-      threshold: 0.1
+<!-- Música de fundo -->
+<audio id="background-music" autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+
+<button onclick="toggleMusic()" style="
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+">🔈</button>
+
+<script>
+  const music = document.getElementById('background-music');
+  let playing = true;
+
+  function toggleMusic() {
+    if (playing) {
+      music.pause();
+    } else {
+      music.play();
+    }
+    playing = !playing;
+  }
+</script>
+
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
     });
+  }, {
+    threshold: 0.1
+  });
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
 </body>
 </html>
