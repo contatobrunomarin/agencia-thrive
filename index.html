@@ -1,139 +1,49 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agência Thrive</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Banner com Slogan -->
-<div style="
-  background: linear-gradient(90deg, #00bcd4, #ff6f61);
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-">
-  Transformando ideias em resultados.
-</div>
+  <header>
+    <div class="logo">Agência Thrive</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>Agência Thrive</h1>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section id="home">
-    <h2>Bem-vindo à Agência Thrive</h2>
-    <p>Na <strong>Agência Thrive</strong>, acreditamos no poder das boas ideias e na força das estratégias bem executadas. Nosso propósito é ajudar marcas e pessoas a se destacarem no mercado, com comunicação criativa e resultados concretos.</p>
-    <p>Transformamos ideias em resultados. Se você quer construir uma presença marcante, comunicar-se com clareza e crescer com consistência, está no lugar certo. Vamos juntos?</p>
+  <section id="home" class="section">
+    <h1>Bem-vindo à Agência Thrive</h1>
+    <p>Comunicação criativa e estratégias que transformam.</p>
   </section>
 
-  <section id="sobre">
+  <section id="sobre" class="section">
     <h2>Sobre Mim</h2>
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-      <img src="bruno.jpg" alt="Foto de Bruno Marin" style="max-width: 250px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-      <div style="flex: 1;">
-        <p>Prazer, sou <strong>Bruno Marin</strong>, o criador da <strong>Agência Thrive</strong> — uma marca em constante evolução, feita de ideias que não param de crescer.</p>
-        <p>Depois de muitas experiências e aprendizados, resolvi transformar minha paixão por comunicação e imagem em um negócio: uma agência que conecta pessoas e marcas através de estratégias criativas e autênticas.</p>
-        <p>Por aqui, tudo é movimento. Estou sempre explorando novas formas de criar, aprender e evoluir. Se você quer alguém que valoriza essência, autenticidade e está em plena jornada de crescimento, talvez a gente tenha muito em comum.</p>
-        <p>Ficou curioso? Então vamos conversar e construir algo incrível juntos!</p>
-      </div>
-    </div>
+    <p>Sou o criador da Agência Thrive, um projeto em constante desenvolvimento e crescimento. Busco sempre despertar a curiosidade e o interesse de quem deseja se conectar com a nossa marca.</p>
   </section>
 
-  <section id="portfolio">
+  <section id="portfolio" class="section">
     <h2>Portfólio</h2>
-    <p>Em breve novidades aqui!</p>
+    <p>Aqui você confere alguns dos projetos que desenvolvemos com criatividade e excelência.</p>
   </section>
 
-  <section id="contato">
+  <section id="contato" class="section">
     <h2>Contato</h2>
-    <p>Você pode entrar em contato comigo diretamente preenchendo o formulário abaixo, ou se preferir, envie um e-mail para:</p>
-    <p><strong><a href="mailto:contatobmadm@outlook.com" style="color: #0077cc;">contatobmadm@outlook.com</a></strong></p>
-
-    <form action="mailto:contatobmadm@outlook.com" method="POST" enctype="text/plain">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-
-      <button type="submit">Enviar mensagem</button>
-    </form>
+    <p>Entre em contato pelo e-mail: <strong>contato@agenciathrive.com</strong></p>
   </section>
-</main>
 
-<footer>
-  <p style="font-style: italic;">Transformando ideias em resultados.</p>
-  <p>&copy; 2025 Agência Thrive. Todos os direitos reservados.</p>
-</footer>
-
-<!-- Música de fundo -->
-<audio id="background-music" loop>
-  <source src="musica.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
-</audio>
-
-<button onclick="toggleMusic()" style="
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-">🔈</button>
-
-<script>
-  const music = document.getElementById('background-music');
-  let playing = false;
-
-  function toggleMusic() {
-    if (playing) {
-      music.pause();
-    } else {
-      music.play();
-    }
-    playing = !playing;
-  }
-</script>
-
-<script>
-  const sections = document.querySelectorAll("section");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
+  <footer>
+    <p>&copy; 2025 Agência Thrive - Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
